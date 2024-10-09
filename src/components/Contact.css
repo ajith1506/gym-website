@@ -1,0 +1,119 @@
+/* Main contact container */
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+/* Wrapper for form and map */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacked layout by default for smaller screens */
+  width: 100%;
+  max-width: 1280px;
+  justify-content: space-between;
+  padding: 20px; /* Add padding for smaller devices */
+}
+
+/* For larger screens, show form and map side by side */
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Contact form styles */
+.contact-form {
+  width: 100%;
+  max-width: 90%; /* Set full width for smaller screens */
+  padding-top: 40px; /* Adjust padding for smaller devices */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    max-width: 40%; /* Maintain max width for larger screens */
+    padding-top: 80px;
+  }
+}
+
+/* Contact heading styles */
+.contact-heading {
+  font-size: 2rem; /* Smaller font size for small screens */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-heading {
+    font-size: 3rem; /* Larger font size for larger screens */
+  }
+}
+
+/* Form group styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Form input and textarea styles */
+.form-input,
+.form-textarea {
+  padding: 12px 16px; /* Reduce padding for smaller screens */
+  border-radius: 8px;
+  border: none;
+  background-color: #f3f3f3;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ff3b30;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+/* Button group styles */
+.button-group {
+  display: flex;
+  flex-direction: column; /* Stack buttons on smaller screens */
+  gap: 15px; /* Smaller gap between buttons on small screens */
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row; /* Side by side buttons on larger screens */
+    gap: 20px;
+  }
+}
+
+/* Map container styles */
+.map-container {
+  width: 100%;
+  max-width: 100%; /* Full width for smaller screens */
+  margin-top: 20px; /* Stack below form on smaller screens */
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    max-width: 30%; /* Side by side with the form on larger screens */
+    margin-top: 40px;
+    position: relative;
+    right: 40px;
+    top: 80px;
+  }
+}

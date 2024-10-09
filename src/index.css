@@ -1,0 +1,6 @@
+body {
+  background: linear-gradient(to bottom right, #000000, #171818);
+  color: white;
+  font-family: "Inter", sans-serif;
+  transition: 0.4s ease-in;
+}

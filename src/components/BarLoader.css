@@ -1,0 +1,18 @@
+.full-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.bar-loader-container {
+  display: flex;
+  gap: 4px; /* Equivalent to Tailwind's gap-1 */
+}
+
+.bar {
+  height: 48px; /* Equivalent to h-12 */
+  width: 8px; /* Equivalent to w-2 */
+  background-color: white;
+}

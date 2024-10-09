@@ -1,0 +1,71 @@
+/* Home Container */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  width: inherit;
+  justify-content: flex-end;
+  padding: 0 20px;
+
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Ensure the background image is centered */
+  background-repeat: no-repeat;
+}
+
+/* Home Content */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  text-align: center; /* Center text for smaller screens */
+}
+
+/* Home Title */
+.home-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    padding: 0 64px;
+    /* Reduced padding slightly for better medium screen view */
+  }
+  .home-content {
+    max-width: 50%; /* Give more width for medium screens */
+    text-align: left;
+    position: relative; /* Align text to left for larger screens */
+  }
+  .home-title {
+    font-size: 5rem;
+    right: 70px; /* No horizontal adjustment for medium screens */
+  }
+  .button-container {
+    justify-content: flex-start; /* Align button to left on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 70px 64px;
+  }
+  .home-content {
+    max-width: 33%;
+    position: absolute;
+    right: 40px; /* For larger screens, restrict width */
+  }
+  .home-title {
+    font-size: 6rem;
+    right: 70px; /* Slight adjustment to create emphasis */
+  }
+}
